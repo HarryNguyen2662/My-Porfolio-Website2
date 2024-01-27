@@ -82,34 +82,6 @@ return (
                 • Coursework: Principles Computer Programming and Data Science, Object-oriented Programming, Calculus of One Variable I & II, Theory Foundations of Computer Science.
             </p>
           </VerticalTimelineElement>
-          <VerticalTimelineElement
-            date={"Aug 2020 - May 2023"}
-            contentStyle={{
-              boxShadow: `var(--shadow)`,
-              border: "3px solid var(--clr-primary)",
-              backgroundColor: `var(--clr-bg)`,
-              textAlign: "center",
-              color: `var(--clr-fg-alt)`,
-            }}
-            contentArrowStyle={{
-              borderRight: "16px solid  var(--clr-primary)",
-            }}
-            iconStyle={{
-              border: ` 3px solid var(--clr-primary)`,
-              backgroundColor: `var(--clr-bg)`,
-              color: `var(--clr-primary)`,
-            }}
-            icon={<SchoolIcon />}
-          >
-            <h3
-              className="vertical-timeline-element-title"
-              data-aos="fade-right"
-            >
-              Le Quy Don High School for the Gifted
-            </h3>
-            <p data-aos="fade-right">
-            </p>
-          </VerticalTimelineElement>
 
           <VerticalTimelineElement
             icon={<StarRateIcon />}

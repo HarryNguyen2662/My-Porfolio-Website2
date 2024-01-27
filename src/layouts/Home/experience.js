@@ -55,9 +55,50 @@ return (
         <h2 className="section__title" data-aos="fade-right">
           My <span className="different">Experience 👨🏻‍💻</span>
         </h2>
-        <VerticalTimeline lineColor={linecolor}>
+          <VerticalTimeline lineColor={linecolor}>
           <VerticalTimelineElement
-            date={"Aug 2023 – Present at Atlanta, Georgia"}
+            date={"Jan 2024 – Present (Remote)"}
+            contentStyle={{
+              boxShadow: `var(--shadow)`,
+              border: "3px solid var(--clr-primary)",
+              backgroundColor: `var(--clr-bg)`,
+              textAlign: "center",
+              color: `var(--clr-fg-alt)`,
+            }}
+            contentArrowStyle={{
+              borderRight: "16px solid  var(--clr-primary)",
+            }}
+            iconStyle={{
+              border: ` 3px solid var(--clr-primary)`,
+              backgroundColor: `var(--clr-bg)`,
+              color: `var(--clr-primary)`,
+            }}
+            icon={<WorkIcon />}
+          >
+            <h3
+              className="vertical-timeline-element-title"
+              data-aos="fade-right"
+            >
+              Software Engineer
+            </h3>
+            <h4
+              className="vertical-timeline-element-subtitle"
+              data-aos="fade-right"
+            >
+              H&T AI TECH
+            </h4>
+            <p data-aos="fade-right">
+                • Pioneered an AI system using TensorFlow and OpenCV that achieves 90% accuracy in identifying vehicles, pedestrians, and other objects.
+            </p>
+            <p data-aos="fade-right">
+                • Develope a react web application with Node.js and MongoDB backend to display the real-time object detection output.
+              </p>
+            <p data-aos="fade-right">
+                • Innovated an AI-based traffic management, human management, navigation system using reinforcement learning algorithms to optimize routes and driving policies.
+            </p>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            date={"Aug 2023 – Dec 2023 at Atlanta, Georgia"}
             contentStyle={{
               boxShadow: `var(--shadow)`,
               border: "3px solid var(--clr-primary)",
@@ -94,47 +135,6 @@ return (
                 • Collaboratively engaged in Agile development processes to gather design requirements, engage in peer programming, and rigorously test applications of 10 responsive webpages and 25+ UI/UX features.
             </p>
             </VerticalTimelineElement>
-          <VerticalTimelineElement
-            date={"Aug 2023 – Remote"}
-            contentStyle={{
-              boxShadow: `var(--shadow)`,
-              border: "3px solid var(--clr-primary)",
-              backgroundColor: `var(--clr-bg)`,
-              textAlign: "center",
-              color: `var(--clr-fg-alt)`,
-            }}
-            contentArrowStyle={{
-              borderRight: "16px solid  var(--clr-primary)",
-            }}
-            iconStyle={{
-              border: ` 3px solid var(--clr-primary)`,
-              backgroundColor: `var(--clr-bg)`,
-              color: `var(--clr-primary)`,
-            }}
-            icon={<WorkIcon />}
-          >
-            <h3
-              className="vertical-timeline-element-title"
-              data-aos="fade-right"
-            >
-              Software Engineer
-            </h3>
-            <h4
-              className="vertical-timeline-element-subtitle"
-              data-aos="fade-right"
-            >
-              H&T AI TECH
-            </h4>
-            <p data-aos="fade-right">
-                • Pioneering an AI system that boasts a staggering 90% accuracy in discerning both automotive entities and pedestrians.
-            </p>
-            <p data-aos="fade-right">
-                • Spearheading the development of foundational infrastructure to showcase the cutting-edge identification system.
-              </p>
-            <p data-aos="fade-right">
-                • Innovating a sophisticated AI-powered traffic management and navigation system.
-            </p>
-          </VerticalTimelineElement>
           <VerticalTimelineElement
             date={"Aug 2023 – Dec 2023 at Atlanta, Georgia"}
             contentStyle={{

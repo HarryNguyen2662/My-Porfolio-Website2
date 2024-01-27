@@ -21,14 +21,14 @@ const ProfileText = ({ visible, titleId }) => (
       <DecoderText text="Hi there" start={visible} delay={500} />
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      I’m Harry, currently I is a driven computer science student from {' '}
+      I’m Harry, currently I am a driven computer science student from {' '}
       <Link href="https://www.gsu.edu">Georgia State University</Link> with a 4.0 GPA. I has gained expertise in languages like Python, C++, Java, JavaScript, and TypeScript through coursework and hands-on projects. I has full-stack web development skills having worked with React, Redux, Node.js, Django, Flask, and databases like MongoDB and PostgreSQL.
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      I has created web and mobile apps like an instantaneous trading platform implemented with React, Redux, PostgreSQL, D3.js, and News/IEX Cloud APIs for real-time data. I also built a mobile messenger app using React Native, Firebase, and ChatGPT API, increasing engagement 52% and reducing response time 35%. In addition, I created my portfolio website with React, Next.js, Three.js, and Chakra UI, boosting interaction 31%. I is proficient in data visualization, UI/UX design, system optimization, Agile development, and deploying scalable applications.
+      I has created web and mobile apps like an instantaneous trading platform implemented with React, Redux, PostgreSQL, D3.js, and News/IEX Cloud APIs for real-time data. I also built a mobile messenger app using React Native, Firebase, and ChatGPT API, increasing engagement 52% and reducing response time 35%. In addition, I created my portfolio website with React, Next.js, Three.js, and Chakra UI, boosting interaction 31%. I am proficient in data visualization, UI/UX design, system optimization, Agile development, and deploying scalable applications.
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      I has interned as a software engineer at Google, completed a full-stack bootcamp, and provided technical support at my university. Key highlights are my proven ability to quickly master new technologies, implement complex projects end-to-end, engage in Agile processes, optimize systems for efficiency and UX, and effectively collaborate. With my academic excellence, communication skills, and hands-on experience, I is well-qualified for software engineer roles.
+      I has interned as a software engineer at Google, completed a full-stack bootcamp, and provided technical support at my university. Key highlights are my proven ability to quickly master new technologies, implement complex projects end-to-end, engage in Agile processes, optimize systems for efficiency and UX, and effectively collaborate. With my academic excellence, communication skills, and hands-on experience, I am well-qualified for software engineer roles.
     </Text>
   </Fragment>
 );

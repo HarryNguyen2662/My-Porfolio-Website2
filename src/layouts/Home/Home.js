@@ -8,9 +8,9 @@ import gamestackTexture from 'assets/gamestack-login.png';
 
 
 
-import sliceTextureLarge from 'assets/slice-app-large.jpg';
-import sliceTexturePlaceholder from 'assets/slice-app-placeholder.jpg';
-import sliceTexture from 'assets/slice-app.jpg';
+import sliceTextureLarge from 'assets/slice-app-large.png';
+import sliceTexturePlaceholder from 'assets/slice-app-placeholder.png';
+import sliceTexture from 'assets/slice-app.png';
 import sprTextureLarge from 'assets/spr-lesson-builder-dark-large2.jpg';
 import sprTexturePlaceholder from 'assets/spr-lesson-builder-dark-placeholder.jpg';
 import sprTexture from 'assets/spr-lesson-builder-dark2.jpg';
@@ -139,10 +139,10 @@ export const Home = () => {
         sectionRef={projectThree}
         visible={visibleSections.includes(projectThree.current)}
         index={3}
-        title="Customizable Blog Publishing App"
-        description="This app lets users easily create customized personal blogs. It uses MongoDB, Express, React, and Node.js to handle user accounts, blog posts, UI, and backend services. Users can sign up, write posts, categorize them, and customize their blog's design."
+        title="DropMarkdown App"
+        description="Developed a MERN Stack cross-platform Markdown-based note taking and knowledge management app designed specifically for writers, developers, researchers and academics who want an efficient way to write and organize notes. The core focus is on speed, usability and flexibility through Markdown and extensibility."
         buttonText="View project"
-        buttonLink="https://github.com/HarryNguyen2662/Customizable-Blog-Publishing-App"
+        buttonLink="https://github.com/HarryNguyen2662/MERN_Stack_DropMarkdown"
         model={{
           type: 'laptop',
           alt: 'Annotating a biomedical image in the Slice app',
