@@ -57,7 +57,45 @@ return (
         </h2>
           <VerticalTimeline lineColor={linecolor}>
           <VerticalTimelineElement
-            date={"Jan 2024 – Present (Remote)"}
+            date={"Jan 2024 – Present at Atlanta, Georgia"}
+            contentStyle={{
+              boxShadow: `var(--shadow)`,
+              border: "3px solid var(--clr-primary)",
+              backgroundColor: `var(--clr-bg)`,
+              textAlign: "center",
+              color: `var(--clr-fg-alt)`,
+            }}
+            contentArrowStyle={{
+              borderRight: "16px solid  var(--clr-primary)",
+            }}
+            iconStyle={{
+              border: ` 3px solid var(--clr-primary)`,
+              backgroundColor: `var(--clr-bg)`,
+              color: `var(--clr-primary)`,
+            }}
+            icon={<WorkIcon />}
+          >
+            <h3
+              className="vertical-timeline-element-title"
+              data-aos="fade-right"
+            >
+              Software Engineer Intern
+            </h3>
+            <h4
+              className="vertical-timeline-element-subtitle"
+              data-aos="fade-right"
+            >
+              Google Developer Student Club
+            </h4>
+            <p data-aos="fade-right">
+                • Completed a comprehensive full-stack web development training bootcamp, gaining expertise in JavaScript, React, Redux, Node.js, Express.js, and MongoDB.
+            </p>
+            <p data-aos="fade-right">
+                • Collaboratively engaged in Agile development processes to gather design requirements, engage in peer programming, and rigorously test applications of 10 responsive webpages and 25+ UI/UX features.
+            </p>
+            </VerticalTimelineElement>
+          <VerticalTimelineElement
+            date={"Aug 2023 – Dec 2024 (Remote)"}
             contentStyle={{
               boxShadow: `var(--shadow)`,
               border: "3px solid var(--clr-primary)",
@@ -97,44 +135,6 @@ return (
                 • Innovated an AI-based traffic management, human management, navigation system using reinforcement learning algorithms to optimize routes and driving policies.
             </p>
           </VerticalTimelineElement>
-          <VerticalTimelineElement
-            date={"Aug 2023 – Dec 2023 at Atlanta, Georgia"}
-            contentStyle={{
-              boxShadow: `var(--shadow)`,
-              border: "3px solid var(--clr-primary)",
-              backgroundColor: `var(--clr-bg)`,
-              textAlign: "center",
-              color: `var(--clr-fg-alt)`,
-            }}
-            contentArrowStyle={{
-              borderRight: "16px solid  var(--clr-primary)",
-            }}
-            iconStyle={{
-              border: ` 3px solid var(--clr-primary)`,
-              backgroundColor: `var(--clr-bg)`,
-              color: `var(--clr-primary)`,
-            }}
-            icon={<WorkIcon />}
-          >
-            <h3
-              className="vertical-timeline-element-title"
-              data-aos="fade-right"
-            >
-              Software Engineer Intern
-            </h3>
-            <h4
-              className="vertical-timeline-element-subtitle"
-              data-aos="fade-right"
-            >
-              Google Developer Student Club
-            </h4>
-            <p data-aos="fade-right">
-                • Completed a comprehensive full-stack web development training bootcamp, gaining expertise in JavaScript, React, Redux, Node.js, Express.js, and MongoDB.
-            </p>
-            <p data-aos="fade-right">
-                • Collaboratively engaged in Agile development processes to gather design requirements, engage in peer programming, and rigorously test applications of 10 responsive webpages and 25+ UI/UX features.
-            </p>
-            </VerticalTimelineElement>
           <VerticalTimelineElement
             date={"Aug 2023 – Dec 2023 at Atlanta, Georgia"}
             contentStyle={{
