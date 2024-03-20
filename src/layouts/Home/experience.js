@@ -88,10 +88,13 @@ return (
               Google Developer Student Club
             </h4>
             <p data-aos="fade-right">
-                • Completed a comprehensive full-stack web development training bootcamp, gaining expertise in JavaScript, React, Redux, Node.js, Express.js, and MongoDB.
+                • Completed a comprehensive full-stack web development training bootcamp, gaining expertise in TypeScript, Next.js, Node.js, DynamoDB, Lambda, and AWS.
             </p>
             <p data-aos="fade-right">
-                • Collaboratively engaged in Agile development processes to gather design requirements, engage in peer programming, and rigorously test applications of 10 responsive webpages and 25+ UI/UX features.
+                • Collaboratively engaged in Agile development processes to gather design requirements, engage in peer programming, and rigorously test the application using Jest and React Testing Library.
+            </p>
+            <p data-aos="fade-right">
+                • Deployed using AWS CDK to provision infrastructure as code and orchestrated CI/CD pipelines through AWS CodePipeline, resulting in a 20% reduction in deployment time and a 15% increase in overall project efficiency.
             </p>
             </VerticalTimelineElement>
           <VerticalTimelineElement
