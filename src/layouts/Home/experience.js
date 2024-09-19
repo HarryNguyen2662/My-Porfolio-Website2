@@ -208,7 +208,7 @@ export const Experience = ({ id, visible, sectionRef }) => {
                 icon={<WorkIcon />}
               >
                 <h3 className="vertical-timeline-element-title" data-aos="fade-right">
-                  Software Engineer Intern
+                  Software Engineer Fellow
                 </h3>
                 <h4 className="vertical-timeline-element-subtitle" data-aos="fade-right">
                   Google Developer Student Club
