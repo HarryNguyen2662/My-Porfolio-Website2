@@ -14,6 +14,12 @@ import sliceTexture from 'assets/slice-app.png';
 import sprTextureLarge from 'assets/spr-lesson-builder-dark-large2.jpg';
 import sprTexturePlaceholder from 'assets/spr-lesson-builder-dark-placeholder.jpg';
 import sprTexture from 'assets/spr-lesson-builder-dark2.jpg';
+import timotoTextureLarge from 'assets/timoto-hero-large.png';
+import timotoTexturePlaceholder from 'assets/timoto-hero-placeholder.jpg';
+import timotoTexture from 'assets/timoto-hero.png';
+import pulumiTextureLarge from 'assets/pulumi-platform-large.png';
+import pulumiTexturePlaceholder from 'assets/pulumi-platform-placeholder.jpg';
+import pulumiTexture from 'assets/pulumi-platform.png';
 import { Footer } from 'components/Footer';
 import { Meta } from 'components/Meta';
 import { Intro } from 'layouts/Home/Intro';
@@ -35,6 +41,7 @@ export const Home = () => {
   const projectOne = useRef();
   const projectTwo = useRef();
   const projectThree = useRef();
+  const projectFour = useRef();
   const details = useRef();
   const experience = useRef();
   const education = useRef();
@@ -42,7 +49,7 @@ export const Home = () => {
   //const lalala = useRef();
 
   useEffect(() => {
-    const sections = [intro, projectOne, projectTwo, projectThree, details, experience, education];
+    const sections = [intro, projectOne, projectTwo, projectThree, projectFour, details, experience, education];
 
     const sectionObserver = new IntersectionObserver(
       (entries, observer) => {
@@ -94,17 +101,17 @@ export const Home = () => {
         sectionRef={projectOne}
         visible={visibleSections.includes(projectOne.current)}
         index={1}
-        title="Designing and Building Instantaneous Trading Platform"
-        description="I developed an engaging and efficient instantaneous trading platform utilizing Python, JavaScript, Django, React, Redux, PostgreSQL, MaterialUI, and D3.js, significantly improving the user experience, data analytics, and backend performance."
+        title="TiMoto AI - AI Evaluation Platform"
+        description="Architected fault-tolerant batch evaluation pipeline with dynamic batching achieving 100% success rate across 50 motorcycles and sub-50ms p99 inference latency using gRPC inter-service communication and circuit breaker patterns. Deployed Django backend to AWS ECS Fargate with multi-AZ configuration achieving 99.9% uptime while reducing costs 44% to $40–60/month through infrastructure optimization."
         buttonText="View project"
-        buttonLink="https://github.com/HarryNguyen2662/Trading_platform_simulator"
+        buttonLink="https://timoto.ai/"
         model={{
           type: 'laptop',
-          alt: 'Smart Sparrow lesson builder',
+          alt: 'TiMoto AI Evaluation Platform',
           textures: [
             {
-              srcSet: [sprTexture, sprTextureLarge],
-              placeholder: sprTexturePlaceholder,
+              srcSet: [timotoTexture, timotoTextureLarge],
+              placeholder: timotoTexturePlaceholder,
             },
           ],
         }}
@@ -150,6 +157,27 @@ export const Home = () => {
             {
               srcSet: [sliceTexture, sliceTextureLarge],
               placeholder: sliceTexturePlaceholder,
+            },
+          ],
+        }}
+      />
+      <ProjectSummary
+        id="project-4"
+        alternate
+        sectionRef={projectFour}
+        visible={visibleSections.includes(projectFour.current)}
+        index={4}
+        title="Pulumi - Open Source Contributor"
+        description="Contributed to Pulumi (24.3k+ stars), a leading Infrastructure-as-Code platform enabling multi-cloud infrastructure management across AWS, Azure, and GCP. Implemented Go CLI features supporting multi-cloud deployments, studying distributed consensus patterns (Raft/Paxos) in state synchronization—building foundation for fault-tolerant systems."
+        buttonText="View project"
+        buttonLink="https://www.pulumi.com/"
+        model={{
+          type: 'laptop',
+          alt: 'Pulumi Infrastructure as Code',
+          textures: [
+            {
+              srcSet: [pulumiTexture, pulumiTextureLarge],
+              placeholder: pulumiTexturePlaceholder,
             },
           ],
         }}

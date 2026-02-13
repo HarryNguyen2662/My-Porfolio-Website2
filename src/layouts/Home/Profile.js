@@ -21,29 +21,16 @@ const ProfileText = ({ visible, titleId }) => (
       <DecoderText text="Hi there" start={visible} delay={500} />
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      I’m Harry, currently I am a driven computer science student from{' '}
-      <Link href="https://www.gsu.edu">Georgia State University</Link> with a 4.0 GPA. I
-      has gained expertise in languages like Python, C++, Java, JavaScript, and TypeScript
-      through coursework and hands-on projects. I has full-stack web development skills
-      having worked with React, Redux, Node.js, Django, Flask, and databases like MongoDB
-      and PostgreSQL.
+      I'm Harry, a computer science student at{' '}
+      <Link href="https://www.gsu.edu">Georgia State University</Link> (Expected May 2027) with a 3.97 GPA.
+      I specialize in building high-performance distributed systems and full-stack applications using Python, C++, Go, Java, JavaScript, and TypeScript.
+      My experience includes interning at Google where I engineered IPC transport layers achieving sub-50ms p99 latency,
+      optimized React systems, and contributed to the Chromium codebase.
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      I has created web and mobile apps like an instantaneous trading platform implemented
-      with React, Redux, PostgreSQL, D3.js, and News/IEX Cloud APIs for real-time data. I
-      also built a mobile messenger app using React Native, Firebase, and ChatGPT API,
-      increasing engagement 52% and reducing response time 35%. In addition, I created my
-      portfolio website with React, Next.js, Three.js, and Chakra UI, boosting interaction
-      31%. I am proficient in data visualization, UI/UX design, system optimization, Agile
-      development, and deploying scalable applications.
-    </Text>
-    <Text className={styles.description} data-visible={visible} size="l" as="p">
-      I has interned as a software engineer at Google, completed a full-stack bootcamp,
-      and provided technical support at my university. Key highlights are my proven
-      ability to quickly master new technologies, implement complex projects end-to-end,
-      engage in Agile processes, optimize systems for efficiency and UX, and effectively
-      collaborate. With my academic excellence, communication skills, and hands-on
-      experience, I am well-qualified for software engineer roles.
+      I've architected scalable systems at Develop for Good and CoderPush, working with React, Django, AWS, DynamoDB, Redis, and gRPC.
+      I'm passionate about distributed systems, performance optimization, and building fault-tolerant applications.
+      I've also contributed to open-source projects like Pulumi and built production-grade applications deployed on AWS ECS.
     </Text>
   </Fragment>
 );
@@ -72,7 +59,7 @@ export const Profile = ({ id, visible, sectionRef }) => {
                 secondary
                 className={styles.button}
                 data-visible={visible}
-                href="https://drive.google.com/file/d/1f9ZuEej212NhxcSOb6PFpxOaRwAJYQlH/view?usp=sharing"
+                href="/Harry_Nguyen_Resume.pdf"
                 icon="send"
               >
                 My resume

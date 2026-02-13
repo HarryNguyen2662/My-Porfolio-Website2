@@ -20,23 +20,24 @@ import { Text } from 'components/Text';
 import { Transition } from 'components/Transition';
 import { Fragment, useState } from 'react';
 import { media } from 'utils/style';
+import { useAppContext } from 'hooks';
 import styles from './Profile.module.css';
 
 export const Experience = ({ id, visible, sectionRef }) => {
   const [focused, setFocused] = useState(false);
   const titleId = `${id}-title`;
-  const themename = React.useContext(React.createContext());
+  const { theme } = useAppContext();
   const [linecolor, setlinecolor] = React.useState(
-    themename === 'light' ? '#23283e' : '#fcfcfc'
+    theme === 'light' ? '#23283e' : '#fcfcfc'
   );
 
   React.useEffect(() => {
-    if (themename === 'dark') {
+    if (theme === 'dark') {
       setlinecolor('#fcfcfc');
     } else {
       setlinecolor('#23283e');
     }
-  }, [themename]);
+  }, [theme]);
 
   return (
     <Section
@@ -57,7 +58,52 @@ export const Experience = ({ id, visible, sectionRef }) => {
             </h2>
             <VerticalTimeline lineColor={linecolor}>
               <VerticalTimelineElement
-                date={'May 2024 – Aug 2024 (remote)'}
+                date={'May 2025 – August 2025'}
+                contentStyle={{
+                  boxShadow: `var(--shadow)`,
+                  border: '3px solid var(--clr-primary)',
+                  backgroundColor: `var(--clr-bg)`,
+                  textAlign: 'center',
+                  color: `var(--clr-fg-alt)`,
+                }}
+                contentArrowStyle={{
+                  borderRight: '16px solid  var(--clr-primary)',
+                }}
+                iconStyle={{
+                  border: ` 3px solid var(--clr-primary)`,
+                  backgroundColor: `var(--clr-bg)`,
+                  color: `var(--clr-primary)`,
+                }}
+                icon={<WorkIcon />}
+              >
+                <h3 className="vertical-timeline-element-title" data-aos="fade-right">
+                  Software Engineer Intern
+                </h3>
+                <h4 className="vertical-timeline-element-subtitle" data-aos="fade-right">
+                  Google
+                </h4>
+                <p data-aos="fade-right">
+                  • Achieved sub-50ms p99 latency engineering IPC transport layer with Protocol Buffers across distributed services
+                  handling 10K+ requests/sec, developing deep understanding of zero-copy techniques and memory hierarchy
+                  optimization—critical for low-latency inter-service communication in distributed architectures
+                </p>
+                <p data-aos="fade-right">
+                  • Cut settings navigation time by 96% (1200ms to sub-50ms) implementing concurrent trie-based search, gaining
+                  hands-on experience with lock-free data structures and thread-safe algorithms—foundational skills for building
+                  high-performance distributed systems
+                </p>
+                <p data-aos="fade-right">
+                  • Accelerated feature velocity by 68% architecting event-driven React system with observer pattern, learning to
+                  design loosely-coupled components that scale—principles directly applicable to microservices architecture
+                </p>
+                <p data-aos="fade-right">
+                  • Contributed to Chromium codebase (25K+ lines) with 95% test coverage, developing skills in collaborative
+                  development at scale and understanding trade-offs in large distributed codebases
+                </p>
+              </VerticalTimelineElement>
+
+              <VerticalTimelineElement
+                date={'May 2024 – August 2024'}
                 contentStyle={{
                   boxShadow: `var(--shadow)`,
                   border: '3px solid var(--clr-primary)',
@@ -82,73 +128,21 @@ export const Experience = ({ id, visible, sectionRef }) => {
                   Develop for Good
                 </h4>
                 <p data-aos="fade-right">
-                  • Technologies: TypeScript, React.js, ChakraUI, MariaDB, Appwrite and
-                  Vercel.
+                  • Scaled to 500+ concurrent users architecting stateless BaaS infrastructure with distributed session management
+                  using JWT, learning horizontal scaling patterns and state partitioning—building blocks for designing fault-tolerant
+                  distributed systems
                 </p>
                 <p data-aos="fade-right">
-                  • Designed and implemented a non-relational database solution with an
-                  efficient data model to store user profiles and survey responses,
-                  facilitating scalable data management and rapid query performance.
+                  • Achieved sub-100ms response times for 10,000+ records through database optimization with strategic indexing,
+                  gaining experience with query optimization and addressing N+1 query problems—critical for data-intensive
+                  distributed applications
                 </p>
                 <p data-aos="fade-right">
-                  • Implemented full-stack CRUD functionality for 5+ data models by
-                  integrating Appwrite’s authentication and database services with the
-                  front-end application, reducing API development time by 40%.
-                </p>
-                <p data-aos="fade-right">
-                  • Implemented advanced candidate profile search and filtering
-                  functionality on the front-end, enhancing the system’s ability to
-                  efficiently find and screen applicants by 22%.
+                  • Slashed deployment time by 90% streamlining CI/CD pipeline with automated testing, developing understanding of
+                  deployment strategies crucial for continuous delivery in distributed environments
                 </p>
               </VerticalTimelineElement>
 
-              <VerticalTimelineElement
-                date={'May 2024 – Aug 2024 at Atlanta, Georgia'}
-                contentStyle={{
-                  boxShadow: `var(--shadow)`,
-                  border: '3px solid var(--clr-primary)',
-                  backgroundColor: `var(--clr-bg)`,
-                  textAlign: 'center',
-                  color: `var(--clr-fg-alt)`,
-                }}
-                contentArrowStyle={{
-                  borderRight: '16px solid  var(--clr-primary)',
-                }}
-                iconStyle={{
-                  border: ` 3px solid var(--clr-primary)`,
-                  backgroundColor: `var(--clr-bg)`,
-                  color: `var(--clr-primary)`,
-                }}
-                icon={<WorkIcon />}
-              >
-                <h3 className="vertical-timeline-element-title" data-aos="fade-right">
-                  Software Engineer Intern
-                </h3>
-                <h4 className="vertical-timeline-element-subtitle" data-aos="fade-right">
-                  CoderPush
-                </h4>
-                <p data-aos="fade-right">
-                  • Technologies: TypeScript, React.js, Redux, AWS Amplify, AWS Lambda,
-                  DynamoDB, Stripe.js and GraphQL.
-                </p>
-                <p data-aos="fade-right">
-                  • Architected and implemented AWS Cognito synchronization to enable
-                  robust authentication for Photo-op startup’s admin portal, reducing
-                  average authentication response time to under 200ms.
-                </p>
-                <p data-aos="fade-right">
-                  • Designed and developed an admin and user management system within an
-                  admin portal utilizing GraphQL generated from AWS Amplify, enabling
-                  comprehensive data retrieval and display on the user interface,
-                  resulting in a 30% improvement in data access efficiency.
-                </p>
-                <p data-aos="fade-right">
-                  • Engineered secure payment functionality using Stripe.js for
-                  client-side integration, and leveraged Stripe API to retrieve and manage
-                  transaction data for comprehensive payment oversight in admin portal,
-                  resulting in a 30% increase in transaction processing efficiency.
-                </p>
-              </VerticalTimelineElement>
               <VerticalTimelineElement
                 date={'Jan 2024 – May 2024 (Remote)'}
                 contentStyle={{
@@ -188,6 +182,7 @@ export const Experience = ({ id, visible, sectionRef }) => {
                   incorporating Supabase for authentication and backend connectivity.
                 </p>
               </VerticalTimelineElement>
+
               <VerticalTimelineElement
                 date={'Jan 2024 – May 2024'}
                 contentStyle={{
@@ -230,6 +225,44 @@ export const Experience = ({ id, visible, sectionRef }) => {
                   efficiency.
                 </p>
               </VerticalTimelineElement>
+
+              <VerticalTimelineElement
+                date={'Sep 2023 – Dec 2023'}
+                contentStyle={{
+                  boxShadow: `var(--shadow)`,
+                  border: '3px solid var(--clr-primary)',
+                  backgroundColor: `var(--clr-bg)`,
+                  textAlign: 'center',
+                  color: `var(--clr-fg-alt)`,
+                }}
+                contentArrowStyle={{
+                  borderRight: '16px solid  var(--clr-primary)',
+                }}
+                iconStyle={{
+                  border: ` 3px solid var(--clr-primary)`,
+                  backgroundColor: `var(--clr-bg)`,
+                  color: `var(--clr-primary)`,
+                }}
+                icon={<WorkIcon />}
+              >
+                <h3 className="vertical-timeline-element-title" data-aos="fade-right">
+                  Software Engineering Intern
+                </h3>
+                <h4 className="vertical-timeline-element-subtitle" data-aos="fade-right">
+                  CoderPush
+                </h4>
+                <p data-aos="fade-right">
+                  • Improved data access by 30% optimizing DynamoDB partition key design to prevent hot partitions handling
+                  9,000+ requests, gaining hands-on experience with distributed database patterns and eventual consistency
+                  trade-offs—essential for scalable data layers
+                </p>
+                <p data-aos="fade-right">
+                  • Built RESTful APIs with Redis distributed caching achieving 85% cache hit rate and idempotent payment APIs
+                  with exponential backoff retry, developing understanding of cache invalidation and failure handling—critical for
+                  distributed systems
+                </p>
+              </VerticalTimelineElement>
+
               <VerticalTimelineElement
                 date={'Aug 2023 – Dec 2023 at Atlanta, Georgia'}
                 contentStyle={{
