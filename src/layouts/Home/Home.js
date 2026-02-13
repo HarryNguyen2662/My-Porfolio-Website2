@@ -11,9 +11,6 @@ import gamestackTexture from 'assets/gamestack-login.png';
 import sliceTextureLarge from 'assets/slice-app-large.png';
 import sliceTexturePlaceholder from 'assets/slice-app-placeholder.png';
 import sliceTexture from 'assets/slice-app.png';
-import sprTextureLarge from 'assets/spr-lesson-builder-dark-large2.jpg';
-import sprTexturePlaceholder from 'assets/spr-lesson-builder-dark-placeholder.jpg';
-import sprTexture from 'assets/spr-lesson-builder-dark2.jpg';
 import timotoTextureLarge from 'assets/timoto-hero-large.png';
 import timotoTexturePlaceholder from 'assets/timoto-hero-placeholder.jpg';
 import timotoTexture from 'assets/timoto-hero.png';
@@ -28,8 +25,6 @@ import { ProjectSummary } from 'layouts/Home/ProjectSummary';
 import { useEffect, useRef, useState } from 'react';
 import { Experience } from 'layouts/Home/experience';
 import { Education } from 'layouts/Home/education';
-import { Skillmot } from 'layouts/Home/skill';
-import { Helloanhem } from 'layouts/Home/lululu';
 import styles from './Home.module.css';
 
 const disciplines = ['Full-time Student', 'Developer'];

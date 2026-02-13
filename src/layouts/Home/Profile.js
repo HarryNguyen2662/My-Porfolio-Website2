@@ -21,16 +21,16 @@ const ProfileText = ({ visible, titleId }) => (
       <DecoderText text="Hi there" start={visible} delay={500} />
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      I'm Harry, a computer science student at{' '}
+      I&apos;m Harry, a computer science student at{' '}
       <Link href="https://www.gsu.edu">Georgia State University</Link> (Expected May 2027) with a 3.97 GPA.
       I specialize in building high-performance distributed systems and full-stack applications using Python, C++, Go, Java, JavaScript, and TypeScript.
       My experience includes interning at Google where I engineered IPC transport layers achieving sub-50ms p99 latency,
       optimized React systems, and contributed to the Chromium codebase.
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      I've architected scalable systems at Develop for Good and CoderPush, working with React, Django, AWS, DynamoDB, Redis, and gRPC.
-      I'm passionate about distributed systems, performance optimization, and building fault-tolerant applications.
-      I've also contributed to open-source projects like Pulumi and built production-grade applications deployed on AWS ECS.
+      I&apos;ve architected scalable systems at Develop for Good and CoderPush, working with React, Django, AWS, DynamoDB, Redis, and gRPC.
+      I&apos;m passionate about distributed systems, performance optimization, and building fault-tolerant applications.
+      I&apos;ve also contributed to open-source projects like Pulumi and built production-grade applications deployed on AWS ECS.
     </Text>
   </Fragment>
 );
